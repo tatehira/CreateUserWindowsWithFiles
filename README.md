@@ -1,4 +1,4 @@
-# CreateUserWindowsWithParams
+# Create remote user on windows
 This script make to automatized process. You cant access case your pc dont to connect your domain. Is beatiful alternative
 
 options for remote acess on windows:
