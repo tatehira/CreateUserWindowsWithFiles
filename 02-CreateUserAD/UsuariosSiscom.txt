@@ -1,0 +1,21 @@
+UsuarioAdicionado joari.luzes 
+SenhaAdicionada HUJM@Suporte 
+========================== 
+UsuarioAdicionado paulo.costa 
+SenhaAdicionada HUUJM@Suporte 
+========================== 
+UsuarioAdicionado pedro.lima 
+ 
+SenhaAdicionada HUJM@Suporte 
+========================== 
+ 
+UsuarioExcluido costa.costa 
+ 
+========================== 
+UsuarioAdicionado helton.godoy 
+ 
+SenhaAdicionada HUJM@Suporte 
+========================== 
+ 
+UsuarioExcluido helton.godoy 
+ 
