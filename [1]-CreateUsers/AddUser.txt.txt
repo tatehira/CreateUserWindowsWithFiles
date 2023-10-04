@@ -1,2 +1,2 @@
-usuario siscomLab
-senha suporte
+user siscomLab
+password suporte

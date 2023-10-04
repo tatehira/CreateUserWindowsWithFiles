@@ -1,32 +1,32 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set "usuario="
-set "senha="
+set "user="
+set "password="
 
 for /f "tokens=1,2 delims=: " %%a in (UserForRemove.txt) do (
-    if /i "%%a"=="usuario" (
-        set "usuario=%%b"
-    ) else if /i "%%a"=="senha" (
-        set "senha=%%b"
+    if /i "%%a"=="user" (
+        set "user=%%b"
+    ) else if /i "%%a"=="password" (
+        set "password=%%b"
     )
 )
 
-if "%usuario%"=="" (
+if "%user%"=="" (
     echo O arquivo UserForRemove.txt não contém um nome de usuário válido.
     exit /b 1
 )
 
-if "%senha%"=="" (
-    echo O arquivo UserForRemove.txt não contém uma senha válida.
+if "%password%"=="" (
+    echo O arquivo UserForRemove.txt não contém uma password válida.
     exit /b 1
 )
 
-net user "%usuario%" "%senha%" /delete
+net user "%user%" "%password%" /delete
 if %errorlevel%==0 (
-    echo O usuário "%usuario%" foi removido com sucesso.
+    echo O usuário "%user%" foi removido com sucesso.
 ) else (
-    echo O usuário "%usuario%" não foi encontrado ou já foi removido.
+    echo O usuário "%user%" não foi encontrado ou já foi removido.
 )
 
 endlocal
